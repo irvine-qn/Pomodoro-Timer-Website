@@ -1,3 +1,7 @@
+function ToPage(page) {
+  window.location.href = page;
+}
+
 const STUDY_TIME = 25;
 const SHORT_BREAK_TIME = 5;
 const LONG_BREAK_TIME = 15;
@@ -7,23 +11,22 @@ let remainingSeconds = 0;
 let isRunning = false;
 
 const path = window.location.pathname;
+const isIndexPage = path.includes("index.html") || path.endsWith("/");
 const isStudyPage = path.includes("study_session.html");
 const isShortPage = path.includes("short_break.html");
 const isLongPage = path.includes("long_break.html");
 
 window.addEventListener("DOMContentLoaded", () => {
-  setupTime();
-  setupButtons();
-  updateDisplay();
+  if (!isIndexPage) {
+    setupTime();
+    setupButtons();
+    updateDisplay();
 
-  if (localStorage.getItem("autoStart") === "true") {
-    startTimer();
+    if (localStorage.getItem("autoStart") === "true") {
+      startTimer();
+    }
   }
 });
-
-function ToPage(page) {
-  window.location.href = page;
-}
 
 function setupTime() {
   if (isStudyPage) remainingSeconds = STUDY_TIME * 60;
