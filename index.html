@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Pomodoro Timer</title>
+    <link rel="icon" type="image/x-icon" href="/Systems/icon.png">
+    <link rel="stylesheet" href="UI/style.css">
+
+<style>
+body {
+    background-color: #2dbdc5;   /* nền xám rất nhạt */
+    background-image:
+        linear-gradient(#ffffff 2px, transparent 2px),
+        linear-gradient(90deg, #ffffff 2px, transparent 2px);
+    background-size: 30px 30px;
+}
+</style>
+</head>
+
+<body>
+    <script src="/javascript/main.js"></script>
+
+    <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake">✩</div>
+        <div class="snowflake">⚝</div>
+        <div class="snowflake">⭒</div>
+        <div class="snowflake">⭑</div>
+        <div class="snowflake">꙳</div>
+        <div class="snowflake">✩</div>
+        <div class="snowflake">✧</div>
+        <div class="snowflake">✮</div>
+        <div class="snowflake">✮</div>
+        <div class="snowflake">✧</div>
+        <div class="snowflake">✩</div>
+        <div class="snowflake">✩</div>
+        <div class="snowflake">✩</div>
+        <div class="snowflake">✮</div>
+        <div class="snowflake">✩</div>
+        <div class="snowflake">✩</div>
+        <div class="snowflake">✧</div>
+        <div class="snowflake">✮</div>
+    </div>
+
+    <div class="container">
+        <div class="timer">
+            <h1 class="wavy-text">
+                <span>P</span><span>o</span><span>m</span><span>o</span><span>d</span><span>o</span><span>r</span><span>o</span>
+                <span>&nbsp;</span> <span>T</span><span>i</span><span>m</span><span>e</span><span>r</span>
+            </h1>
+
+            <br>
+            <h2>Get Ready?</h2> <br>
+
+            <div class="buttons">
+                <button id="active-button">
+                    <span onclick="ToPage('study_session.html')">
+                        START
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
