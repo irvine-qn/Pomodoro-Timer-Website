@@ -22,8 +22,7 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 
 function ToPage(page) {
-  const basePath = window.location.pathname.includes("/pages/") ? "../" : "";
-  window.location.href = basePath + page;
+  window.location.href = page;
 }
 
 function setupTime() {
