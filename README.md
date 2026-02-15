@@ -45,11 +45,7 @@ POMODORO-TIMER-WEBSITE/
 │
 ├── index.html
 └── README.md
-<<<<<<< HEAD
-=======
 ```
----
->>>>>>> d0bbd043ef1d475e983eb91bd34fa489702347a0
 
 ## Author
 Developed by Irvine
