@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Pomodoro Timer</title>
+    <link rel="icon" type="image/x-icon" href="/assets/icon.png">
+    <link rel="stylesheet" href="/UI/style.css">
+
+<style>
+body {
+    background-color: #e95757; 
+    background-image:
+        linear-gradient(#ffffff 2px, transparent 2px),
+        linear-gradient(90deg, #ffffff 2px, transparent 2px);
+    background-size: 30px 30px;
+}
+</style>
+</head>
+
+<body>
+    <script src="/javascript/main.js"></script>
+
+    <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake">✩</div>
+        <div class="snowflake">⚝</div>
+        <div class="snowflake">⭒</div>
+        <div class="snowflake">⭑</div>
+        <div class="snowflake">꙳</div>
+        <div class="snowflake">✩</div>
+        <div class="snowflake">✧</div>
+        <div class="snowflake">✮</div>
+        <div class="snowflake">✮</div>
+        <div class="snowflake">✧</div>
+        <div class="snowflake">✩</div>
+        <div class="snowflake">✩</div>
+        <div class="snowflake">✩</div>
+        <div class="snowflake">✮</div>
+        <div class="snowflake">✩</div>
+        <div class="snowflake">✩</div>
+        <div class="snowflake">✧</div>
+        <div class="snowflake">✮</div>
+    </div>
+
+    <div class="container">
+        <div class="timer">
+            <h1 class="wavy-text">
+                <span>P</span><span>o</span><span>m</span><span>o</span><span>d</span><span>o</span><span>r</span><span>o</span>
+                <span>&nbsp;</span> <span>T</span><span>i</span><span>m</span><span>e</span><span>r</span>
+            </h1>
+
+            <main>
+                <h2>Study session</h2>
+
+                <div class="pomodoro">
+                    <div id="study-session" class="timer-display" data-duration="25.00">
+                        <h1 class="time">25:00</h1>
+                    </div>
+                    <br>
+                </div>
+
+                <div class="add-box">
+                    <span class="nonactive-button" onclick="ToPage('short_break.html')">Short Break</span>
+                    <span class="nonactive-button" onclick="ToPage('long_break.html')">Long Break</span>
+                </div>
+            </main>
+
+            <div class="buttons">
+                <br>
+                <button id="active-button">START</button>
+                <button id="active-button">STOP</button>
+                <button id="active-button">SKIP</button>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

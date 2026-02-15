@@ -53,9 +53,9 @@ POMODORO-TIMER-WEBSITE/
 │   └── long_break.html
 │
 ├── index.html
-├── README.md
-└── .gitignore (optional)
+└── README.md
 
+---
 
 ## Author
 Developed by Irvine
