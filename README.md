@@ -34,7 +34,8 @@ Live Demo:
 ---
 
 ## Project Structure
-POMODORO-TIMER-WEBSITE/
+```
+POMODORO-TIMER-WEBSITE/ 
 │
 ├── assets/
 │   ├── icon.png
@@ -54,7 +55,7 @@ POMODORO-TIMER-WEBSITE/
 │
 ├── index.html
 └── README.md
-
+```
 ---
 
 ## Author
